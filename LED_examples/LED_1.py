@@ -1,9 +1,10 @@
 """
 ==== Prof. Kartik V. Bulusu
-==== MAE Department, SEAS GWU
+==== CS and MAE Department, SEAS GWU
 ==== Description
 ======== This program is for blinking an LED wired to Raspberry PI
-======== It has been written exclusively for CS1010 students in GWU.
+======== It has been written exclusively for students of CS3907(IoT and Edge Computing Applications) 
+======== and CS1010(Computer Science Orientation) courses in GWU.
 ======== It may not be used for any other purposes unless author's prior permission is aquired.
 """
 
