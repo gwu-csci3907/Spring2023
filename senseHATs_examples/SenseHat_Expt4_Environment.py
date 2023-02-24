@@ -10,7 +10,7 @@ from time import asctime
 
 email_sender = "cs3907.edgelab@gmail.com"
 email_password = "uhoj xyxj apmc knms"
-email_receiver = "kartik.bulusu@gmail.com"
+email_receiver = "YOUR EMAIL GOES HERE"
 
 #sense = SenseHat()
 #temp = round(sense.get_temperature()*1.8+32)
@@ -33,7 +33,7 @@ msg['Subject'] = "Temp Rasp"
 #Testing the email
 #"""
 
-header = ' FirstName LastName sent the following data on ' + now + '\n'
+header = ' YOUR FIRSTNAME LASTNAME sent the following data on ' + now + '\n'
 #data = ' T=%dF, H=%d, P =%d \n' %(temp,humidity,pressure)
 #body = header + data
 body = header
