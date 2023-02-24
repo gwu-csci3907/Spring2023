@@ -10,7 +10,7 @@ we report the package as Available, and if the import (or import initialization)
 we report the package as Unavailable.
 
 Dependencies:
-  pip3 install gpiozero pigpio RPi.GPIO
+  pip3 install gpiozero pigpio RPi.GPIO requests
 
 Built and tested with Python 3.7 on Raspberry Pi 4 Model B
 Tested with Python 3.5.3 on Raspberry Pi 3B+
