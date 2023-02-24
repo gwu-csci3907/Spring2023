@@ -1,12 +1,21 @@
 """
 File: chapter02/dweet_led.py
+Source: Practical Python Programming for IoT
+Author: Gary Smart
+
+Modified by Kartik Bulusu (CS Dept., GWU)
+  Kartik Bulusu Tested with Python 3.5.3 on Raspberry Pi 3B+
+
+Dependencies:
+  pip3 install gpiozero pigpio RPi.GPIO requests
+
+Additional requirements:
+  May need to run sudo pigpiod at the terminal
+
+File: chapter01/gpio_pkg_check.py
 
 A Python program to control an LED using the public dweet.io service.
 
-Dependencies:
-  pip3 install gpiozero pigpio requests
-
-Built and tested with Python 3.7 on Raspberry Pi 4 Model B
 """
 import signal
 import json
@@ -19,11 +28,6 @@ from time import sleep
 from uuid import uuid1
 import requests
 import RPi.GPIO as GPIO
-
-
-#GPIO.setmode(GPIO.BOARD)
-
-#GPIO.setup([11,12], GPIO.OUT)
 
 # Global Variables
 LED_GPIO_PIN = 17                  # GPIO Pin that LED is connected to
