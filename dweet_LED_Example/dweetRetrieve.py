@@ -1,3 +1,20 @@
+"""
+Author: Kartik Bulusu (CS Dept., GWU)
+This Python script fetches data from a publicly available thing residing on dweet.io 
+
+Dependencies:
+  pip3 install dweepy
+  
+Built and tested with tested with Python 3.5.3 on Raspberry Pi 3B+
+
+Tested with dweet-thing with the following entries, verbatim:
+1. thing == 4c_Seattle1
+2. data1 == Temperature
+3. data2 == Humidity
+4. data3 == Barometric_Pressure
+
+"""
+
 # ==================================================== #
 # ============== Import libraries that matter ======== #
 import dweepy
@@ -5,15 +22,19 @@ import dweepy
 
 # ==================================================== #
 
-# Get thing name sourced from dweet.io
+# Get thing name sourced from dweet.io: 4c_Seattle1
 thing = input("Enter the thing name: " )
 
 # Assign data variables
-# Use the names copied verbatim from the thing  
+# Use the names copied verbatim from the thing
+
+# data1 = Temperature
 data1 = input("Retrieve IoT data #1 from the thing: " )
 
+# data2 = Humidity
 data2 = input("Retrieve IoT data #2 from the thing: " )
 
+# data3 = Barometric_Pressure
 data3 = input("Retrieve IoT data #3 from the thing: " )
 
 thing_info = dweepy.get_latest_dweet_for(thing)
