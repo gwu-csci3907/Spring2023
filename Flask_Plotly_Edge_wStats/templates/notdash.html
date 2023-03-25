@@ -1,0 +1,36 @@
+<!-- ==== html frontend for flask app for IoT applications
+==== Source code written by Prof. Kartik Bulusu
+==== CS and MAE Department, SEAS GWU
+==== Description:
+======== flask API implementation for IoT demonstration in CS3907   
+======== This program incorporates the RaspberryPi SenseHat sensors and flask library
+============ SenseHat documentation: https://www.raspberrypi.com/documentation/accessories/sense-hat.html
+==== Reference: https://towardsdatascience.com/web-visualization-with-plotly-and-flask-3660abf9c946
+==== Requirements:
+============ The program requires following javascript libraries:
+============ plotly-latest.min.js
+============ Or 
+============ https://cdn.plot.ly/plotly-latest.min.js
+======== It has been written exclusively for CS3907 students in GWU.
+======== It may not be used for any other purposes unless author's prior permission is aquired.
+==== Testing:
+==== 1. Developed on 03/07/2023 using VSCode on Macbook Pro 
+==== 2. Tested on 03/09/2023 on Python 3.5.3 on Raspberry Pi 3B+
+==== 3. Modified on 03/10/2023 using VSCode on Macbook Pro  -->
+
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="refresh" content="10">
+</head>
+<body>
+  <h1>Prof. Bulusu's data from sensors</h1>
+  <div id='chart' class='chart'”></div>
+</body>
+<!-- <script src='https://cdn.plot.ly/plotly-latest.min.js'></script> -->
+<script src='/static/plotly-latest.min.js'></script>
+<script type='text/javascript'>
+  var graphs = {{graphJSON | safe}};
+  Plotly.plot('chart',graphs,{});
+</script>
+</html>
